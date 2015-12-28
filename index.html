@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <script>
+      var count = 0;
+      setInterval(() => {
+        new Notification("TEST", {body: String(count)});
+        ++count;
+      }, 5000);
+    </script>
+  </body>
+</html>
